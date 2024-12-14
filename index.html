@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentija Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+        .nav {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+
+            background-color: rgb(39, 39, 39);
+        }
+        .nav h1 {
+            font-size: 3.9vw;
+            margin-left: 1.5vw;
+            color:  rgb(255, 254, 254);
+        }
+        .nav span {
+            color: rgb(254, 67, 5);
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 150px;
+        }
+        ul li {
+            list-style: none;
+            margin-top: 1vw;
+        }
+        ul li a {
+            text-decoration: none;
+            font-size: 1.9vw;
+            margin-right: 2vw;
+            color: #fefefe;
+        }
+        .left {
+            float: left;
+            width: 50%;
+        }
+        .right {
+            width: 50%;
+            float: right;
+        }
+        .right img {
+            padding-top: 5vw;
+            width: 100%;
+            height: 99.9vh;
+        }
+        #home {
+            width: 100%;
+            height: 100vh;
+            border-bottom: 1px solid black;
+            background: rgb(205, 203, 203);
+        }
+        #home h1 {
+            font-size: 3.5vw;
+            margin-top: 20vw;
+            margin-left: 2vw;
+        }
+        #home span {
+            font-size: 3.5vw;
+            color: rgb(254, 67, 5);
+        }
+        #home p {
+            font-size: 1.7vw;
+            margin-left: 2vw;
+        }
+        #home button {
+            margin-left: 2vw;
+            margin-top: 1vw;
+            background-color: rgb(254, 67, 5);
+            border: none;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        #home a {
+            color: #fefefe;
+            text-decoration: none;
+            font-size: 1.2vw;
+            font-weight: bold;
+        }
+        #about {
+            width: 100%;
+            height: 100vh;
+            border-bottom: 1px solid black;
+            background: rgb(205, 203, 203);
+        }
+        #about .aboutl {
+            padding-top: 4.5vw;
+            width: 50%;
+            float: left;
+        }
+        .aboutr {
+            width: 50%;
+            float: right;
+        }
+        .aboutr p {
+            font-size: 2vw;
+            margin-top: 2vw;
+        }
+        .aboutr h1 {
+            margin-top: 4vw;
+            font-size: 4vw;
+        }
+        .aboutl img {
+            width: 90%;
+            height: 90vh;
+            margin-left: 1vw;
+        }
+        #project {
+            width: 100%;
+            height: 100vh;
+            background: rgb(205, 203, 203);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .project {
+            width: 90%;
+            background-color: #040404;
+            height: 38vh;
+            margin-top: 1.5vw;
+            margin-left: 2vw;
+            border-radius: 5px;
+        }
+        .project h2 {
+            text-align: center;
+            color: #fefefe;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+            font-size: 2.5vw;
+        }
+        .project h4 {
+            color: #fefefe;
+            font-size: 1.3vw;
+            margin-left: 1vw;
+        }
+        .project span {
+            font-size: 1vw;
+        }
+        #project h1 {
+            text-align: center;
+            padding-top: 5vw;
+            font-size: 3vw;
+        }
+        button {
+            margin-left: 10vw;
+            width: 30%;
+            height: 5vh;
+            margin-top: 1.5vw;
+            background-color: rgb(254, 67, 5);
+            border: none;
+            border-radius: 2px;
+        }
+        button a {
+            text-decoration: none;
+            color: #fcfbfb;
+            font-size: 1vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="nav">
+            <h1><span>Lentija</span> Portfolio</h1>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#project">Project</a>
+                </li>
+            </ul>
+        </div>
+        <div id="home">
+            <div class="left">
+                <h1>Hello, I'm <span>Razent John Lentija</span></h1>
+                <p>I am Razent John Lentija currently 2nd year college student and studying at Western Visayas State University with course of Bachelor of Science in Information Technology. I live at Barangay Tiringanan, Janiuay, Iloilo</p>
+                <button><a href="#about">About me</a></button>
+            </div>
+            <div class="right">
+                <img src="468958827_1242864996938341_4068528598647128374_n-removebg-preview (1) - Copy.png" alt="">
+            </div>
+        </div>
+        <div id="about">
+            <div class="aboutl">
+                <img src="468958827_1242864996938341_4068528598647128374_n.jpg" alt="">
+            </div>
+            <div class="aboutr">
+                <h1>About me:</h1>
+                <p>Name: Razent John Lentija</p>
+                <p>Sex: Male</p>
+                <p>Age: 21</p>
+                <p>Birthdate: January 11,  2003</p>
+                <p>Address: Tiringanan, Janiuay, Iloilo</p>
+                <p>Course: Bachelor of Science in Information Technology</p>
+                <p>Year Level: 2nd Year</p>
+            </div>
+        </div>
+        <div id="project">
+            <h1>My Activity</h1>
+            <div class="container">
+                <div class="project">
+                    <h2>Activity 1</h2>
+                    <h4>Name: Home Page</h4>
+                    <h4>Description: <span>A homepage is the main landing page of a website, designed to introduce visitors to the site's purpose. It typically includes a logo, navigation menu, a large banner or hero image, key content sections (like services or products), and calls-to-action (CTAs) to guide users.</span></h4>
+                    <button><a href="https://razentwebpage.netlify.app/" target="_blank">View Activity</a></button>
+                </div>
+                <div class="project">
+                    <h2>Activity 2</h2>
+                    <h4>Name: Responsive Css</h4>
+                    <h4>Description: <span>A responsive webpage is designed to adapt its layout and content based on the size and orientation of the user's device screen. It ensures optimal viewing experience by using flexible grids, images, and media queries to adjust elements for desktops, tablets, and smartphones.</span></h4>
+                    <button><a href="https://responsiverazentwebpage.netlify.app/" target="_blank">View Activity</a></button>
+                </div>
+                <div class="project">
+                    <h2>Activity 3</h2>
+                    <h4>Name: Individual Webpage</h4>
+                    <h4>Description: <span>An individual webpage is a single, standalone document on the internet, typically consisting of text, images, videos, and interactive elements, all contained within one URL. It can serve various purposes, such as presenting information, offering services, or enabling user interaction.</span></h4>
+                    <button><a href="https://sodaresponsive.netlify.app/" target="_blank">View Activity</a></button>
+                </div>
+                <div class="project">
+                    <h2>Activity 4</h2>
+                    <h4>Name: Calculator UI Design</h4>
+                    <h4>Description: <span>A simple calculator design typically features a clean, user-friendly layout with a grid of buttons, each corresponding to digits (0-9), basic operations (addition, subtraction, multiplication, division), and functional keys (clear, equals, etc.). </span></h4>
+                    <button><a href="https://calculator-lentija.netlify.app/" target="_blank">View Activity</a></button>
+                </div>
+                <div class="project">
+                    <h2>Activity 5</h2>
+                    <h4>Name: Functional Calculator</h4>
+                    <h4>Description: <span>A functional calculator features a display area to show inputs and results, with a set of buttons for digits, arithmetic operations, and special functions like clear and equals. The design is intuitive, allowing users to perform basic calculations efficiently like add, subtract, multiply and division.</span></h4>
+                    <button><a href="https://calculator-lentija.netlify.app/" target="_blank">View Activity</a></button>
+                </div>
+                <div class="project">
+                    <h2>Activity 6</h2>
+                    <h4>Name: Sign up and Log in</h4>
+                    <h4>Description: <span>The sign-up page enables users to create a new account by entering their personal information, such as name, email, and password, with confirmation steps to verify accuracy. The login page allows registered users to access their account by entering their credentials, such as email and password.</span></h4>
+                    <button><a href="https://lentijasignup.netlify.app/" target="_blank">View Activity</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
